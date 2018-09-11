@@ -75,7 +75,7 @@ public class Retum {
     private void startDetection() {
         Bundle bundle = new Bundle();
         bundle.putSerializable(DummyFragment.BASE_PREDICTOR, basePredictor);
-        DummyFragment dummyFragment = new DummyFragment(appCompatActivity.getSupportFragmentManager());
+        DummyFragment dummyFragment = new DummyFragment();
         dummyFragment.setArguments(bundle);
 
         FragmentTransaction fragmentTransaction = appCompatActivity.getSupportFragmentManager().beginTransaction();
@@ -110,12 +110,6 @@ public class Retum {
     @SuppressLint("ValidFragment")
     public static class DummyFragment extends Fragment {
         public static String BASE_PREDICTOR = "BASE_PREDICTOR";
-        private FragmentManager fragmentManager;
-
-        public DummyFragment(FragmentManager fragmentManager) {
-            super();
-            this.fragmentManager = fragmentManager;
-        }
 
 
         @Override
@@ -143,7 +137,7 @@ public class Retum {
                 staticRetumCallback.onScanFailure(exception.getMessage());
 
             }
-            fragmentManager.beginTransaction()
+            Objects.requireNonNull(getFragmentManager()).beginTransaction()
                     .remove(this).commit();
         }
     }
