@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Retum Scanner</string>
+
+    <string name="okay">Okay</string>
+    <string name="start_detection">Start Detection</string>
+    <string name="hold_your_cnic_here">Hold Your CNIC here</string>
+</resources>

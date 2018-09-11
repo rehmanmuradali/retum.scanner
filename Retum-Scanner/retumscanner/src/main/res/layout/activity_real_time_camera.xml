@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent"
+    android:orientation="horizontal">
+
+
+    <FrameLayout
+        android:id="@+id/frameLayoutCameraPreview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent">
+
+        <ImageView
+            android:id="@+id/imageViewCNICImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/textViewHoldYourCNIC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/hold_your_cnic_here"
+            android:textColor="@color/colorDarkGreen"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/imageViewCNICSquareCamera"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/cnic_detection_rectangle"
+            tools:ignore="ContentDescription" />
+
+
+    </FrameLayout>
+
+
+    <ImageView
+        android:id="@+id/imageViewCapture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:paddingBottom="@dimen/space_8pt"
+        android:src="@drawable/take_photo"
+        android:visibility="gone"
+        tools:ignore="ContentDescription"/>
+
+    <ImageView
+        android:id="@+id/imageViewCaptureDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:paddingBottom="@dimen/space_8pt"
+        android:src="@drawable/done_icon"
+        android:visibility="gone"
+        tools:ignore="ContentDescription"/>
+
+
+    <ImageView
+        android:id="@+id/imageViewRetake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="@dimen/space_16pt"
+        android:layout_marginEnd="@dimen/space_12pt"
+        android:layout_marginRight="@dimen/space_12pt"
+        android:background="@color/colorBlackBack"
+        android:src="@drawable/retake_photo"
+        android:visibility="gone"
+        tools:ignore="ContentDescription"/>
+
+</FrameLayout>

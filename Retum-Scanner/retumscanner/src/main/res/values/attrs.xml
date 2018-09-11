@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PinView">
+        <attr name="indicatorSize" format="dimension"/>
+        <attr name="indicatorGap" format="dimension"/>
+        <attr name="indicatorDefault" format="reference"/>
+        <attr name="indicatorFilled" format="reference"/>
+        <attr name="pinLength" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="ProgressBarCompat">
+        <attr name="progressTint" format="reference"/>
+    </declare-styleable>
+</resources>

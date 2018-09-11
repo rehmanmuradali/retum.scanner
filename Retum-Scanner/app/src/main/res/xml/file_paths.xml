@@ -1,0 +1,9 @@
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <external-path
+        name="md_images"
+        path="Android/data/com.tez.androidapp/files/Pictures"/>
+
+    <external-path
+        name="md_images"
+        path="Android/data/com.tez.androidapp.dev/files/Pictures"/>
+</paths>

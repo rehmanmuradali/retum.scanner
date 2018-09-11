@@ -1,0 +1,33 @@
+<resources>
+
+
+    <dimen name="space_4pt">4dp</dimen>
+    <dimen name="space_6pt">6dp</dimen>
+    <dimen name="space_8pt">8dp</dimen>
+    <dimen name="space_12pt">12dp</dimen>
+    <dimen name="space_16pt">16dp</dimen>
+    <dimen name="space_20pt">20dp</dimen>
+    <dimen name="space_32pt">32dp</dimen>
+    <dimen name="space_40pt">40dp</dimen>
+    <dimen name="space_48pt">48dp</dimen>
+    <dimen name="space_64pt">64dp</dimen>
+
+    <dimen name="text_size_11pt">11sp</dimen>
+    <dimen name="text_size_12pt">12sp</dimen>
+    <dimen name="text_size_14pt">14sp</dimen>
+    <dimen name="text_size_16pt">16sp</dimen>
+    <dimen name="text_size_18pt">18sp</dimen>
+    <dimen name="text_size_20pt">20sp</dimen>
+    <dimen name="text_size_22pt">22sp</dimen>
+    <dimen name="text_size_24pt">24sp</dimen>
+    <dimen name="action_bar_elevation">4dp</dimen>
+    <dimen name="action_bar_padding">16dp</dimen>
+    <dimen name="action_bar_image_size">40dp</dimen>
+    <dimen name="action_bar_image_padding">10dp</dimen>
+    <dimen name="action_bar_image_margin_right">4dp</dimen>
+    <dimen name="text_size_10pt">10sp</dimen>
+    <dimen name="four_digit_pin_height_width">36dp</dimen>
+    <dimen name="four_digit_pin_view_gap">8dp</dimen>
+
+
+</resources>

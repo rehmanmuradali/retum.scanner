@@ -1,0 +1,313 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/colorBlackBack</item>
+        <item name="android:actionBarStyle">@style/MyTheme.ActionBarStyle</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="generalButtonStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/colorBlackBack</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:elevation">2dp</item>
+        <item name="fontPath">fonts/exo_bold.ttf</item>
+    </style>
+
+
+    <style name="buttonStyle" parent="generalButtonStyle">
+        <item name="android:background">@drawable/button_clicked_back</item>
+        <item name="android:textColor">@color/button_clicked</item>
+        <item name="android:layout_marginTop">@dimen/space_12pt</item>
+        <item name="android:layout_marginRight">@dimen/space_12pt</item>
+        <item name="android:layout_marginLeft">@dimen/space_12pt</item>
+        <item name="android:layout_marginBottom">@dimen/space_12pt</item>
+    </style>
+
+    <style name="buttonStyleDotted" parent="generalButtonStyle">
+        <item name="android:background">@drawable/green_dotted_box</item>
+        <item name="android:textColor">@color/colorGreen</item>
+        <item name="android:layout_marginTop">@dimen/space_12pt</item>
+        <item name="android:layout_marginRight">@dimen/space_12pt</item>
+        <item name="android:layout_marginLeft">@dimen/space_12pt</item>
+        <item name="android:layout_marginBottom">@dimen/space_12pt</item>
+    </style>
+
+    <style name="editTextStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:textColor">@color/edit_text_input_text_color</item>
+        <item name="android:backgroundTint">@color/edit_text_bottom_line_color</item>
+        <item name="backgroundTint">@color/edit_text_bottom_line_color</item>
+        <item name="android:textColorHint">@color/edit_text_hint_color</item>
+    </style>
+
+    <style name="textInputLayoutStyle">
+        <item name="android:textColorHint">@color/edit_text_hint_color</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="signUpIconStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">55dp</item>
+    </style>
+
+    <style name="signUpUrduIconStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">70dp</item>
+    </style>
+
+    <style name="signUpEditTextStyle" parent="myProfileEditTextStyle">
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:textColor">@color/edit_text_hint_color</item>
+    </style>
+
+    <style name="myProfileEditTextStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:textSize">15sp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:layout_marginTop">-4dp</item>
+        <item name="android:textColor">@color/colorDarkGrey</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:backgroundTint">@color/edit_text_bottom_line_color_new</item>
+        <item name="backgroundTint">@color/edit_text_bottom_line_color_new</item>
+        <item name="android:textColorHint">@color/edit_text_hint_color</item>
+    </style>
+
+    <style name="TezCheckBox" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">#C1C6CA</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/space_12pt</item>
+        <item name="android:text">Mjhe Terms and Conditions qubool hai</item>
+        <item name="android:gravity">top</item>
+        <item name="android:textSize">@dimen/text_size_14pt</item>
+    </style>
+
+
+    <style name="MyTheme.ActionBarStyle" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
+    </style>
+
+    <style name="MyTheme.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="DrawerArrowStyle" parent="@style/Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">#ffffff</item>
+    </style>
+
+    <style name="loanApplicationStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">@color/edit_text_hint_color</item>
+        <item name="android:backgroundTint">@color/edit_text_bottom_line_color_new</item>
+        <item name="backgroundTint">@color/edit_text_bottom_line_color_new</item>
+        <item name="android:textColorHint">@color/edit_text_hint_color</item>
+    </style>
+
+    <style name="tezCardStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/space_8pt</item>
+        <item name="android:layout_marginRight">@dimen/space_8pt</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@color/colorWhite</item>
+        <item name="cardUseCompatPadding">true</item>
+        <item name="contentPadding">@dimen/space_8pt</item>
+    </style>
+
+
+    <style name="dashboardCardStyle" parent="tezCardStyle">
+        <item name="android:layout_marginTop">@dimen/space_8pt</item>
+        <item name="android:layout_weight">1</item>
+        <item name="contentPadding">@dimen/space_6pt</item>
+    </style>
+
+    <style name="termsCardStyle" parent="tezCardStyle">
+        <item name="android:layout_marginBottom">@dimen/space_8pt</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+    </style>
+
+    <style name="infoCardStyle" parent="tezCardStyle">
+        <item name="android:layout_marginTop">@dimen/space_8pt</item>
+    </style>
+
+    <style name="helpCardHeadingStyle">
+        <item name="android:paddingLeft">@dimen/space_12pt</item>
+        <item name="android:paddingRight">@dimen/space_12pt</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/text_size_18pt</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="fontPath">fonts/exo_bold.ttf</item>
+    </style>
+
+    <style name="helpCardSubTextStyle">
+        <item name="android:paddingLeft">@dimen/space_12pt</item>
+        <item name="android:paddingRight">@dimen/space_12pt</item>
+        <item name="android:textSize">@dimen/text_size_16pt</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="helpCardImageStyle">
+        <item name="android:layout_width">@dimen/space_64pt</item>
+        <item name="android:layout_height">@dimen/space_64pt</item>
+        <item name="android:tint">@color/colorWhite</item>
+        <item name="android:padding">@dimen/space_16pt</item>
+    </style>
+
+
+    <style name="secondaryActionItemStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:drawablePadding">@dimen/space_12pt</item>
+        <item name="android:drawableRight">@drawable/ic_right_arrow</item>
+        <item name="android:textColor">@color/colorDarkGrey</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">@dimen/text_size_16pt</item>
+        <item name="fontPath">fonts/exo_bold.ttf</item>
+    </style>
+
+    <style name="successScreenHeaderStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">@dimen/space_8pt</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/colorGreen</item>
+        <item name="android:textSize">@dimen/text_size_24pt</item>
+        <item name="fontPath">fonts/exo_bold.ttf</item>
+    </style>
+
+    <style name="successScreenSecondaryTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorBlue</item>
+        <item name="android:textSize">@dimen/text_size_20pt</item>
+        <item name="fontPath">fonts/exo_bold.ttf</item>
+    </style>
+
+    <style name="secondaryActionButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorGreen</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:padding">@dimen/space_8pt</item>
+        <item name="android:textSize">@dimen/text_size_16pt</item>
+    </style>
+
+
+    <style name="receiptRowContainerStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:padding">@dimen/space_8pt</item>
+    </style>
+
+    <style name="receiptKeyStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/text_size_16pt</item>
+    </style>
+
+    <style name="receiptValueStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="fontPath">fonts/exo_semi_bold.ttf</item>
+        <item name="android:text">Data</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorBlue</item>
+        <item name="android:textSize">@dimen/text_size_16pt</item>
+    </style>
+
+    <style name="receiptSeparatorStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/colorGrey</item>
+    </style>
+
+    <style name="receiptHeaderSubTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">Data</item>
+    </style>
+
+
+    <style name="receiptHeaderMainTextStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">-4dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="fontPath">fonts/exo_bold.ttf</item>
+        <item name="android:text">Data</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">28sp</item>
+    </style>
+
+
+    <style name="RadioButtonStyle" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/colorGreen</item>
+        <item name="android:textColorSecondary">@color/colorGrey</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="CustomTabText" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="textAllCaps">false</item>
+        <item name="fontPath">fonts/exo_regular.ttf</item>
+    </style>
+
+    <style name="FilePickerTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="PickerTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabBackground">@android:color/white</item>
+        <item name="tabSelectedTextColor">@color/colorGreen</item>
+        <item name="tabIndicatorColor">@color/colorGreen</item>
+        <item name="tabGravity">fill</item>
+        <item name="tabMaxWidth">0dp</item>
+    </style>
+
+</resources>
