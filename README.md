@@ -6,12 +6,12 @@ Retum Scanner is a card scanning library for Android. Default Implementation inc
 * Date of Expiry 
 * Date of Issue. 
 
-Retum also allows to write **Custom Predictors** which can predict the data of your **Custom Card**.
+Retum also allow you to write **Custom Predictors** which can predict the data of your **Custom Card**.
 
 
 ## Demo
 
-![Not Loaded](https://media.giphy.com/media/bcK86vcxE32k8qL5Mm/giphy.gif)
+![Demo](https://media.giphy.com/media/bcK86vcxE32k8qL5Mm/giphy.gif)
 
 
 ## Setup
@@ -37,7 +37,7 @@ Retum also allows to write **Custom Predictors** which can predict the data of y
  ```
  
  
- ## How to Use Retum?
+ ## How to use Retum?
  ```
  buttonID.setOnClickListener(view -> 
               new Retum()
@@ -119,7 +119,7 @@ public class CreditCardModel extends AbstractBaseModel<CreditCardModel> {
 
     /**
         The function is used to get the max score of a model so that program 
-        know that the prediction is done and return.
+        know that the prediction is done and returns.
     **/
 
     @Override
@@ -128,9 +128,9 @@ public class CreditCardModel extends AbstractBaseModel<CreditCardModel> {
     }
 
     /**
-        The function is used to get the min score of a model so that program 
+        The function is used to get the minimum score of a model so that program 
         can know that minimum fields are deteced and return a success callback, 
-        else return a failure callback after Time0ut( Which is 10 seconds).
+        else return a failure callback after Timeout( which is 10 seconds).
     **/
     
     @Override
@@ -147,8 +147,8 @@ public class CreditCardPredictor implements BasePredictor<CreditCardModel>
     @Override
     public CreditCardModel process(List<String> dataList, List<Element> elementList) {
        
-        //   1) Do relevant predictor with the provided text ( converted from firebase OCR-On Device model)
-        //   2) Set the predicted data to your custom model and returm the model.
+        //   1) Do relevant prediction with the provided text ( dataList: converted from firebase OCR-On Device model)
+        //   2) Set the predicted data to your custom model and return the model.
         CreditCardModel creditCardModel = predictData(dataList,elementList);
         
         return creditCardModel;
