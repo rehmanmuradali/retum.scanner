@@ -9,6 +9,10 @@ Retum Scanner is a card scanning library for Android. Default Implementation inc
 Retum also allows to write **Custom Predictors** which can predict the data of your **Custom Card**.
 
 
+## Demo
+
+![Not Loaded](https://media.giphy.com/media/bcK86vcxE32k8qL5Mm/giphy.gif)
+
 
 ## Setup
 
