@@ -1,7 +1,7 @@
 # Retum Scanner
 
 Retum Scanner is a card scanning library for Android. Default Implementation includes **CNIC Scanner**, which detects:
-* CNIC Number,
+* CNIC Number
 * Date of Birth 
 * Date of Expiry 
 * Date of Issue. 
