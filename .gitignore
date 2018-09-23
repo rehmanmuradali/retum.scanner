@@ -9,3 +9,6 @@
 /captures
 .externalNativeBuild
 .idea/
+retumscanner.jks
+app/release/app-release.apk
+app/release/
