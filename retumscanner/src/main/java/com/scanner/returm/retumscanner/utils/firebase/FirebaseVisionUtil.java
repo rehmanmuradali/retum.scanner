@@ -13,9 +13,9 @@ import com.google.firebase.ml.vision.face.FirebaseVisionFaceDetectorOptions;
 import com.google.firebase.ml.vision.face.FirebaseVisionFaceDetectorOptions.Builder;
 import com.google.firebase.ml.vision.face.FirebaseVisionFaceLandmark;
 import com.google.firebase.ml.vision.text.FirebaseVisionText;
-import com.google.firebase.ml.vision.text.FirebaseVisionText.Block;
 import com.google.firebase.ml.vision.text.FirebaseVisionText.Element;
 import com.google.firebase.ml.vision.text.FirebaseVisionText.Line;
+import com.google.firebase.ml.vision.text.FirebaseVisionText.TextBlock;
 import com.scanner.returm.retumscanner.utils.firebase.callback.ImageFaceRetrieveCallback;
 import com.scanner.returm.retumscanner.utils.firebase.callback.ImageTextRetrieveCallback;
 
@@ -58,10 +58,10 @@ public class FirebaseVisionUtil {
         ArrayList<String> blockList = new ArrayList<>();
         List<Element> elements = new ArrayList<>();
         String stringBuilder = "Operation Finishes, Block size:  " +
-                firebaseVisionText.getBlocks().size();
+                firebaseVisionText.getTextBlocks().size();
         Log.e(TAG, stringBuilder);
         int blockNumber = 1;
-        for (Block block : firebaseVisionText.getBlocks()) {
+        for (TextBlock block : firebaseVisionText.getTextBlocks()) {
             Point[] cornerPoints = block.getCornerPoints();
             String str2 = TAG;
             StringBuilder stringBuilder2 = new StringBuilder();
@@ -121,8 +121,8 @@ public class FirebaseVisionUtil {
 
         FirebaseVisionImageMetadata metadata = builder.build();
         this.image = FirebaseVisionImage.fromByteArray(bytes, metadata);
-        FirebaseVision.getInstance().getVisionTextDetector()
-                .detectInImage(this.image)
+        FirebaseVision.getInstance().getOnDeviceTextRecognizer()
+                .processImage(this.image)
                 .addOnSuccessListener(this::extractTextFromImage)
                 .addOnFailureListener(e -> {
                     String stringBuilder = "FirebaseVisionText Failed to detect:  " +
