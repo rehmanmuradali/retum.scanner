@@ -1,3 +1,5 @@
+[![Android Arsenal]( https://img.shields.io/badge/Android%20Arsenal-Retum%20Scanner-green.svg?style=flat )]( https://android-arsenal.com/details/1/7329 )
+
 # Retum Scanner
 
 Retum Scanner is a card scanning library for Android. Default Implementation includes **CNIC Scanner**, which detects:
